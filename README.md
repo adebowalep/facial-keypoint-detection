@@ -3,10 +3,11 @@
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![tests](https://github.com/adebowalep/facial-keypoint-detection/actions/workflows/tests.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-MIT-green)
+[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Hugging%20Face%20Space-blue)](https://huggingface.co/spaces/paragonadey/facial-keypoint-detection)
 
 A from-scratch CNN pipeline that detects faces in any photo and predicts 68
 facial keypoints per face (eyes, eyebrows, nose, mouth, jaw) — plus a Gradio
-app for interactive inference.
+app for interactive inference. **[Try the live demo →](https://huggingface.co/spaces/paragonadey/facial-keypoint-detection)**
 
 **What this demonstrates:** building and debugging a real, deployed
 computer-vision inference pipeline — including diagnosing a subtle
@@ -118,6 +119,10 @@ Detects every face in the image, predicts keypoints for each, and saves a
 visualization. Run `facial-keypoints-demo --help` for options.
 
 ## Gradio app
+
+**Live demo:** [huggingface.co/spaces/paragonadey/facial-keypoint-detection](https://huggingface.co/spaces/paragonadey/facial-keypoint-detection)
+
+Or run it locally:
 
 ```bash
 python app/gradio_app.py
