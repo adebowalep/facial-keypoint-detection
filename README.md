@@ -9,6 +9,8 @@ A from-scratch CNN pipeline that detects faces in any photo and predicts 68
 facial keypoints per face (eyes, eyebrows, nose, mouth, jaw) — plus a Gradio
 app for interactive inference. **[Try the live demo →](https://huggingface.co/spaces/paragonadey/facial-keypoint-detection)**
 
+![Live demo detecting keypoints on 4 faces at once, varied hair color and lighting](docs/live_demo_multi_face.webp)
+
 **What this demonstrates:** building and debugging a real, deployed
 computer-vision inference pipeline — including diagnosing a subtle
 `BatchNorm` numerical-stability bug in a trained checkpoint (predictions were
