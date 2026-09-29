@@ -1,0 +1,7 @@
+{
+  "n_images": 770,
+  "mean_px_error": 8.534,
+  "median_px_error": 7.465,
+  "p95_px_error": 18.505,
+  "max_px_error": 33.254
+}
