@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+.venv/
+venv/
+.DS_Store
+
+.ipynb_checkpoints/
+
+# large local-only training data; not committed, see README for how to fetch it
+data/
+*.zip
+
+# scratch outputs from local runs of the CLI/demo
+keypoints_output.png

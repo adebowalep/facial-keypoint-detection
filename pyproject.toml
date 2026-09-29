@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facial-keypoint-detection"
+version = "1.0.0"
+description = "CNN-based facial keypoint detection: Haar cascade face detection + PyTorch regression model predicting 68 landmarks per face."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "opencv-python-headless>=4.8,<5",
+    "numpy>=1.24,<2",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+]
+app = [
+    "gradio>=4.0",
+]
+
+[project.scripts]
+facial-keypoints-demo = "facial_keypoints.cli:main"
+facial-keypoints-eval = "facial_keypoints.evaluate:main"
+
+[tool.setuptools.packages.find]
+include = ["facial_keypoints*"]
+
+[tool.setuptools.package-data]
+facial_keypoints = ["assets/*.xml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
